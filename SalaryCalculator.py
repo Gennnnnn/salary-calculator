@@ -857,10 +857,6 @@ class SalaryCalculator:
         with open(self.json_file_path, "w") as file:
             json.dump(data_to_save, file, indent=4)
 
-        # if not silent:  
-        #     messagebox.showinfo("Backup Complete", f"Data has been successfully saved!\nLocation: {self.receipts_folder}")
-
-
     def load_data(self):
         """Loads salary and attendance data from JSON in SCfiles - Workers."""
         try:
